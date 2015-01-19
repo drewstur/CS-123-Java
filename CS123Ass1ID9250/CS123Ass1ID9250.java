@@ -13,16 +13,18 @@ public class CS123Ass1ID9250
     int monthlyPay = 2555;
     int yearlyExpense = 5000;
     double taxRate = .33;
-    double annualPayAfterTax;
-    double netIncome;
+    double annualPayAfterTax = 0;
+    double netIncome = 0;
     
     annualPayAfterTax = monthlyPay * (1-taxRate)*12;
     netIncome = annualPayAfterTax - yearlyExpense;
     
     System.out.println("My monthly pay is $"+monthlyPay);
     System.out.println("My Tax rate is "+taxRate);
-    System.out.println("My annual pay after tax is $"+Math.round(annualPayAfterTax*100.0)/100.0);
+    //If you want rounding you can use Math.round(annualPayAfterTax*100.0)/100.0
+    System.out.println("My annual pay after tax is $"+annualPayAfterTax);
     System.out.println("My expense a year is $"+yearlyExpense);
-    System.out.println("My net income a year is $"+Math.round(netIncome*100.0)/100.0);
+    //If you want rounding you can use Math.round(netIncome*100.0)/100.0
+    System.out.println("My net income a year is $"+netIncome);
   }
 }
